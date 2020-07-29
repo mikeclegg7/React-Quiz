@@ -36,3 +36,458 @@
     transform: rotate(360deg);
   }
 }
+
+.question {
+  display: block;
+  margin-bottom: 100px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(60, 64, 67, 0.2);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  background-color: #fcfcf7;
+  transition: all 0.3s ease-out;
+}
+.quest_count {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: right;
+  font-weight: bold;
+  color: grey;
+}
+.questionText {
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+.questionText h3 {
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.questionText p {
+  margin-bottom: 20px;
+}
+.answersgroup {
+  display: block;
+  padding-bottom: 15px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.answer {
+  margin-top: 5px;
+  padding: 8px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #ffffff;
+}
+.answer:hover {
+  background-color: #fff38f;
+  cursor: pointer;
+}
+.question__sticky-counter-container {
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  z-index: 100 !important;
+  top: 180px;
+  left: 0px;
+}
+.question__sticky-counter-center {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.question__sticky-counter-box {
+  background: #ffffff;
+  width: 100px;
+  margin-right: 0px;
+  margin-left: auto;
+  padding: 5px;
+  border-bottom: 2px solid #f5f5f0;
+  border-left: 2px solid #f5f5f0;
+  border-right: 2px solid #f5f5f0;
+}
+
+.results_section {
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 10px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+.score {
+  font-size: 22px;
+  padding: 10px;
+}
+.answer-info {
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.results_message {
+  margin-top: 20px;
+}
+.table_heading {
+  background: #f5f5f0;
+}
+.table_heading {
+  vertical-align: middle;
+}
+.score_cell_l,
+.score_cell_r {
+  padding: 2px;
+  border: none;
+}
+.score_cell_r {
+  text-align: left;
+}
+
+* {
+  box-sizing: border-box;
+}
+.MainContent {
+  display: block;
+  margin-top: 190px;
+  max-width: 800px;
+  min-height: calc(100vh - 170px - 88px);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+.Wrap {
+  position: relative;
+}
+.Wrap p {
+  font-size: 1rem;
+  margin-bottom: 1.3rem;
+  line-height: 1.6rem;
+}
+.Wrap li {
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+
+.Header {
+  height: 130px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #3297a7;
+  display: block;
+  box-sizing: border-box;
+  z-index: 90;
+  color: white;
+}
+.Title {
+  font-family: Raleway, Roboto, Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 34px;
+  font-weight: 200;
+  line-height: 34px;
+  color: white;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  vertical-align: middle;
+  padding: 12px;
+  text-decoration: none;
+}
+.TitleSecondary {
+  font-size: 20px;
+}
+.Title a .Title a:hover,
+.Title a:active,
+.Title a.active {
+  text-decoration: underline;
+  color: white;
+}
+
+.Footer {
+  background-color: #194c54;
+  display: block;
+  position: absolute;
+  margin-top: 30px;
+  height: 100px;
+  width: 100%;
+}
+.FooterBlock {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.FooterText p {
+  padding: 20px;
+  font-size: 16px !important;
+  color: white;
+  margin: 0px !important;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.FooterAvatar {
+  padding: 15px 0px 0px 0px;
+}
+.FooterAvatar img {
+  width: 100px;
+}
+.Footer a {
+  color: white;
+}
+.Footer a:hover,
+.Footer a:active,
+.Footer a.active {
+  text-decoration: underline;
+  color: #fff8bf;
+}
+.Avatar {
+  border-radius: 100%;
+}
+
+.SideDraw {
+  height: 100%;
+  width: 150px;
+  position: fixed;
+  left: 0;
+  background-color: #424242;
+  top: 0;
+  z-index: 200;
+  padding: 32px 16px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease-out;
+}
+.Links {
+  margin-top: 110px;
+  text-align: center;
+  color: white;
+}
+
+.CloseButton {
+  color: white;
+  position: fixed;
+  top: 5px;
+  left: 130px;
+  cursor: pointer;
+}
+
+@media (min-width: 500px) {
+  .SideDraw {
+    display: none;
+  }
+}
+
+.Open {
+  transform: translateX(0);
+}
+
+.Close {
+  transform: translateX(-100%);
+}
+.Backdrop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.DrawerToggle {
+  width: 40px;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.DrawerToggle div {
+  width: 90%;
+  height: 3px;
+  background-color: white;
+}
+
+@media (min-width: 500px) {
+  .DrawerToggle {
+    display: none;
+  }
+}
+
+.NavTopBar {
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 130px;
+  left: 0;
+  background-color: #194c54;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 90;
+}
+.DesktopOnly {
+  max-width: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  height: 100%;
+}
+@media (max-width: 499px) {
+  .DesktopOnly {
+    display: none;
+  }
+}
+
+.NavigationItems {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  height: 100%;
+}
+
+@media (min-width: 500px) {
+  .NavigationItems {
+    flex-flow: row;
+  }
+}
+
+.NavigationItem {
+  margin: 5px 0;
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+  color: white;
+  box-sizing: border-box;
+}
+
+.NavigationItem a {
+  text-decoration: none;
+  height: 100%;
+  display: block;
+  color: white;
+  font-size: 0.8rem;
+  box-sizing: border-box;
+}
+
+.NavigationItem a:hover,
+.NavigationItem a:active,
+.NavigationItem a.active {
+  text-decoration: underline;
+  color: #fff8bf;
+}
+
+@media (min-width: 500px) {
+  .NavigationItem {
+    margin: 0;
+    display: flex;
+    width: auto;
+    align-items: center;
+    font-size: 0.8rem;
+  }
+
+  .NavigationItem a {
+    color: white;
+    text-decoration: none;
+    padding: 16px 10px;
+  }
+
+  .NavigationItem a:hover,
+  .NavigationItem a:active,
+  .NavigationItem a.active {
+    color: #fff8bf;
+  }
+}
+.quiz_menu {
+  text-align: center;
+}
+.quiz_menu_options {
+  max-width: 650px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px auto 50px auto;
+}
+.quiz_menu_item {
+  border: 1px solid grey;
+  border-radius: 10px;
+  width: 300px;
+  height: 75px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  vertical-align: middle;
+  box-shadow: 0 2px 3px #ccc;
+}
+.quiz_menu_item:hover {
+  background-color: #fff38f;
+  cursor: pointer;
+}
+.quiz_menu_item p {
+  margin: 12px auto 10px auto;
+  vertical-align: middle;
+}
+.results_page {
+  text-align: center;
+}
+.results_quiz_score {
+  width: 200px;
+  margin: 30px auto 0px auto;
+  background-color: rgb(250, 221, 140);
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+.results_quiz_score p {
+  font-size: 22px;
+  padding: 10px;
+  margin: 0px;
+}
+.results__rank {
+  margin-top: 50px;
+}
+.results__what-next {
+  margin-top: 100px;
+}
+
+.quest-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.quest-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.quest-exit {
+  opacity: 1;
+}
+.quest-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
