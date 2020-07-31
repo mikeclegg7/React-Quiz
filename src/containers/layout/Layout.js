@@ -69,6 +69,9 @@ class Layout extends Component {
             closed={this.sideDrawClosedHandler}
           />
           <section className="MainContent">{content}</section>
+          {/* <section className="MainContent">
+            <QuizResults />
+          </section> */}
           <Footer />
         </div>
       </Aux>
