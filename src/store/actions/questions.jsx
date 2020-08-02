@@ -15,3 +15,14 @@ export const loadNextQuestion = () => {
     type: "LOAD_NEXT_QUESTION",
   };
 };
+export const replayQuiz = (which) => {
+  return {
+    type: "REPLAY_QUIZ",
+    whichQuiz: which,
+  };
+};
+export const chooseNewQuiz = () => {
+  return {
+    type: "CHOOSE_NEW_QUIZ",
+  };
+};

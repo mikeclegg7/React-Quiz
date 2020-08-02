@@ -1,17 +1,11 @@
-import React, { Component, createRef } from "react";
+import React, { Component } from "react";
 import { CSSTransition } from "react-transition-group";
 import { connect } from "react-redux";
 import * as actions from "../../store/actions/index";
 
-// import "../../App.css";
+import AnswerButton from "../../components/UI/answerButton/answerButton";
 
 class Question extends Component {
-  componentDidMount() {}
-  componentWillUnmount() {
-    console.log("[question.js] did unmount");
-    //add css swipe out animation
-  }
-
   render() {
     const nodeRef = React.createRef(null);
     let question = this.props.questionsLoaded ? (
@@ -20,8 +14,6 @@ class Question extends Component {
         timeout={500}
         nodeRef={nodeRef}
         classNames="quest"
-        // unmountOnExit
-        // onEnter={() => setShowButton(false)}
         onExited={() => this.props.loadNextQ()}
       >
         <div className="question" ref={nodeRef}>
@@ -37,35 +29,27 @@ class Question extends Component {
             />
           </div>
           <div className="answersgroup">
-            <div
-              className="answer"
-              onClick={() => this.props.updateAndGetNext("A")}
-            >
-              {this.props.question.answerOptionA}
-            </div>
-            <div
-              className="answer"
-              onClick={() => this.props.updateAndGetNext("B")}
-            >
-              {this.props.question.answerOptionB}
-            </div>
-            <div
-              className="answer"
-              onClick={() => this.props.updateAndGetNext("C")}
-            >
-              {this.props.question.answerOptionC}
-            </div>
-            <div
-              className="answer"
-              onClick={() => this.props.updateAndGetNext("D")}
-            >
-              {this.props.question.answerOptionD}
-            </div>
+            <AnswerButton
+              clicked={() => this.props.updateAndGetNext("A")}
+              answerText={this.props.question.answerOptionA}
+            />
+            <AnswerButton
+              clicked={() => this.props.updateAndGetNext("B")}
+              answerText={this.props.question.answerOptionB}
+            />
+            <AnswerButton
+              clicked={() => this.props.updateAndGetNext("C")}
+              answerText={this.props.question.answerOptionC}
+            />
+            <AnswerButton
+              clicked={() => this.props.updateAndGetNext("D")}
+              answerText={this.props.question.answerOptionD}
+            />
           </div>
         </div>
       </CSSTransition>
     ) : (
-      <p>loading...</p>
+      <p>Loading...</p>
     );
 
     return <div>{question}</div>;
@@ -82,7 +66,6 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     loadNextQ: () => dispatch(actions.loadNextQuestion()),
-    // slideInQ: () => dispatch(actions.slideInQuestion()),
   };
 };
 

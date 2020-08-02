@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
-//this section will involve returning the redux score and alos number of questions
+import Btn from "../../components/UI/generalButton/generalButton";
+import * as actions from "../../store/actions/index";
+
+//this section will involve returning the redux score and also number of questions
 
 class QuizResults extends Component {
   calculateScore() {
@@ -163,7 +166,15 @@ class QuizResults extends Component {
           <p>
             <strong>Would you like to:</strong>
           </p>
-          <p>Reply this Quiz - Play another quiz</p>
+          <div className="results__what-next-btns">
+            <Btn
+              text="Reply this Quiz"
+              btnClick={() =>
+                this.props.onReplayCurrentQuiz(this.props.quizSet)
+              }
+            />{" "}
+            <Btn text="Choose New Quiz" btnClick={this.props.onChooseNewQuiz} />
+          </div>
         </div>
       </div>
     );
@@ -172,8 +183,15 @@ class QuizResults extends Component {
 
 const mapStateToProps = (state) => {
   return {
+    quizSet: state.questions.whichQuiz,
     quizQuestions: state.questions.questionSet,
   };
 };
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onReplayCurrentQuiz: (whichQuiz) => dispatch(actions.replayQuiz(whichQuiz)),
+    onChooseNewQuiz: () => dispatch(actions.chooseNewQuiz()),
+  };
+};
 
-export default connect(mapStateToProps)(QuizResults);
+export default connect(mapStateToProps, mapDispatchToProps)(QuizResults);

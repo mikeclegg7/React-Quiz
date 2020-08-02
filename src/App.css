@@ -79,7 +79,7 @@
   margin-left: auto;
   margin-right: auto;
 }
-.answer {
+.answer-btn {
   margin-top: 5px;
   padding: 8px;
   border: 1px solid grey;
@@ -88,7 +88,7 @@
   font-weight: bold;
   background-color: #ffffff;
 }
-.answer:hover {
+.answer-btn:hover {
   background-color: #fff38f;
   cursor: pointer;
 }
@@ -362,7 +362,7 @@ h2 {
   }
 }
 
-.NavigationItems {
+.navigation-items {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -491,7 +491,7 @@ h2 {
   font-weight: bold;
 }
 .results__what-next {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .quest-enter {
@@ -510,4 +510,25 @@ h2 {
   opacity: 0;
   transform: scale(0.9);
   transition: opacity 300ms, transform 300ms;
+}
+
+.general-btn {
+  margin: 5px;
+  padding: 8px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #ffffff;
+}
+.general-btn:hover {
+  background-color: #fff38f;
+  cursor: pointer;
+}
+.results__what-next-btns {
+  max-width: 600px;
+  margin: 0px auto 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }

@@ -30,22 +30,6 @@ class Layout extends Component {
     });
   };
 
-  // loadQuiz = (whichQuiz) => {
-  //   this.setState({
-  //     whichQuiz: "quiz_1",
-  //     showResults: false,
-  //     quizLoaded: true,
-  //   });
-  // };
-  // showResults = (quizQuestions) => {
-  //   this.setState({
-  //     showQuizResults: true,
-  //     quizLoaded: false,
-  //   });
-  //   console.log("[LAYOUT]");
-  // };
-
-  //Render and return the different elements
   render() {
     let content = this.props.quizComplete ? (
       <QuizResults />
@@ -58,6 +42,8 @@ class Layout extends Component {
       <QuizMenu />
     );
 
+    //content = <QuizResults />;
+
     return (
       <Aux>
         <div className="Wrap">
@@ -69,9 +55,6 @@ class Layout extends Component {
             closed={this.sideDrawClosedHandler}
           />
           <section className="MainContent">{content}</section>
-          {/* <section className="MainContent">
-            <QuizResults />
-          </section> */}
           <Footer />
         </div>
       </Aux>

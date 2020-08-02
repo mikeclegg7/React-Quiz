@@ -1,1 +1,7 @@
-export { updateQuestionAnswer, initQuiz, loadNextQuestion } from "./questions";
+export {
+  updateQuestionAnswer,
+  initQuiz,
+  loadNextQuestion,
+  replayQuiz,
+  chooseNewQuiz,
+} from "./questions";

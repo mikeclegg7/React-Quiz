@@ -10,19 +10,19 @@ class QuizMenu extends Component {
       {
         QuizID: "quiz_1",
         quizName: "Europe Capitals",
-        quizStatus: "Incomplete",
         quizNumQuestions: 10,
-        quizScore: null,
       },
       {
         QuizID: "quiz_2",
         quizName: "Famous Landmarks",
-        quizStatus: "Incomplete",
         quizNumQuestions: 10,
-        quizScore: null,
       },
     ],
   };
+
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
 
   getQuestions(whichQuestions) {
     switch (whichQuestions) {
@@ -62,10 +62,6 @@ class QuizMenu extends Component {
               </p>
             </div>
           ))}
-          <p>
-            To do next: add counter in questions - improve design more, add
-            buttons for more quizzes
-          </p>
         </div>
       </div>
     );

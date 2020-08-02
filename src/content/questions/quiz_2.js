@@ -5,7 +5,7 @@ export const questions = [
     questionText:
       "The Eiffel Tower is a famous landmark you’ll find in which city?",
     questionImage:
-      "https://www.travelanddestinations.com/wp-content/uploads/2020/05/Quiz-Eiffel-Tower-1.jpg",
+      "https://www.travelanddestinations.com/wp-content/uploads/2017/06/Paris.jpg",
     answerOptionA: "Nice",
     answerOptionB: "Madrid",
     answerOptionC: "Lisbon",
